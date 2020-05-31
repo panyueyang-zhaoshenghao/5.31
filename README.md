@@ -29,13 +29,13 @@ using namespace std;
 struct node
 {
     int north;
-    int south;//先定义一个结构体，里面包含了north（北岸城市）和south（南岸城市）
+    int south;
 };
 node a[200005];
 int n,i,d[200005],len,temp;
 bool cmp(node x,node y)
 {
-    return x.north<y.north;//我们只需要对北岸排序求南岸的最长不下降子序列即可（可以反过来，对南岸排序求北岸的最长不下降子序列）
+    return x.north<y.north;
 }
 int main ()
 {
